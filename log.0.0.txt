@@ -1,0 +1,37 @@
+[2020-10-28 09:55:19] [INFO   ] files: ENTRY_CREATE: qwer.json 
+[2020-10-28 09:55:19] [INFO   ] Create time 10/27/2020 09:22:31 
+[2020-10-28 09:55:19] [INFO   ] Начало выполнения 28/10/2020 09:55:19 
+[2020-10-28 09:55:19] [INFO   ] Lines in the file 11 
+[2020-10-28 09:55:19] [INFO   ] Total execution time to read lines of the file in nano seconds: 699059 
+[2020-10-28 09:58:05] [INFO   ] files: ENTRY_CREATE: log.txt 
+[2020-10-28 09:58:05] [INFO   ] Create time 10/28/2020 09:07:52 
+[2020-10-28 09:58:05] [INFO   ] Начало выполнения 28/10/2020 09:58:05 
+[2020-10-28 09:58:05] [INFO   ] Total execution time to delete file in nano seconds: 180351 
+[2020-10-28 09:58:15] [INFO   ] files: ENTRY_DELETE: log.txt 
+[2020-10-28 09:58:45] [INFO   ] files: ENTRY_DELETE: qwer.json 
+[2020-10-28 11:43:08] [INFO   ] files: ENTRY_CREATE: qwer.json 
+[2020-10-28 11:43:08] [INFO   ] Create time 10/27/2020 09:22:31 
+[2020-10-28 11:43:08] [INFO   ] Начало выполнения 28/10/2020 11:43:08 
+[2020-10-28 11:43:08] [INFO   ] Lines in the file 11 
+[2020-10-28 11:43:08] [INFO   ] Total execution time to read lines of the file in nano seconds: 708324 
+[2020-10-28 11:49:43] [INFO   ] files: ENTRY_DELETE: qwer.json 
+[2020-10-28 11:49:53] [INFO   ] files: ENTRY_CREATE: qwer.json 
+[2020-10-28 11:49:53] [INFO   ] Create time 10/27/2020 09:22:31 
+[2020-10-28 11:49:53] [INFO   ] Начало выполнения 28/10/2020 11:49:53 
+[2020-10-28 11:49:53] [INFO   ] Lines in the file 11 
+[2020-10-28 11:49:53] [INFO   ] Total execution time to read lines of the file in nano seconds: 967086 
+[2020-10-28 14:38:27] [INFO   ] TestDirectory: ENTRY_DELETE: qwer.json 
+[2020-10-28 14:38:37] [INFO   ] TestDirectory: ENTRY_CREATE: qwer.json 
+[2020-10-28 14:38:37] [INFO   ] Create time 10/27/2020 09:22:31 
+[2020-10-28 14:38:37] [INFO   ] Начало выполнения 28/10/2020 14:38:37 
+[2020-10-28 14:38:37] [INFO   ] Lines in the file 11 
+[2020-10-28 14:38:37] [INFO   ] Total execution time to read lines of the file in nano seconds: 886271 
+[2020-10-28 15:35:24] [INFO   ] TestDirectory: ENTRY_DELETE: qwer.json 
+[2020-10-28 15:35:44] [INFO   ] TestDirectory: ENTRY_CREATE: qwer.json 
+[2020-10-28 15:35:44] [INFO   ] Create time 10/27/2020 09:22:31 
+[2020-10-28 15:35:44] [INFO   ] Начало выполнения 28/10/2020 15:35:44 
+[2020-10-28 15:35:44] [INFO   ] Lines in the file 11 
+[2020-10-28 15:35:44] [INFO   ] Total execution time to read lines of the file in nano seconds: 955680 
+[2020-10-28 15:36:04] [INFO   ] TestDirectory: ENTRY_DELETE: qwer.json 
+[2020-10-28 16:35:50] [INFO   ] Начало выполнения 28/10/2020 16:35:50 
+[2020-10-28 16:35:50] [INFO   ] Total execution time to delete file in nano seconds: 201851 
