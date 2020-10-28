@@ -1,0 +1,8 @@
+<dependencies>
+    <dependency>
+        <groupId>example</groupId>
+        <artifactId>example</artifactId>
+        <version>example</version>
+        <scope>example</scope>
+    </dependency>
+</dependencies>

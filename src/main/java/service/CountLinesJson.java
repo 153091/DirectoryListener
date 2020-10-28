@@ -12,6 +12,7 @@ import java.util.Date;
 public class CountLinesJson implements FileHandler {
 
     private String path; // directory denoted by the abstract pathname.
+    private int lineNumber;
 
     public CountLinesJson(String path) {
         this.path = path;
@@ -33,7 +34,7 @@ public class CountLinesJson implements FileHandler {
             FileReader fileReader = new FileReader(myFile);
             LineNumberReader lineNumberReader = new LineNumberReader(fileReader);
 
-            int lineNumber = 0;
+            lineNumber = 0;
 
             while (lineNumberReader.readLine() != null){
                 lineNumber++;
@@ -50,5 +51,9 @@ public class CountLinesJson implements FileHandler {
         long elapsedTime = System.nanoTime() - startTime;
 
         LoggerService.LOGGER.info("Total execution time to read lines of the file in nano seconds: " + elapsedTime);
+    }
+
+    public int getLineNumber() {
+        return lineNumber;
     }
 }

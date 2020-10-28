@@ -1,4 +1,5 @@
 import org.junit.Test;
+import service.FormatTime;
 import service.TimeChecker;
 
 import java.io.File;
@@ -11,16 +12,11 @@ public class FormatTimeTest {
     private final TimeChecker timeChecker = new TimeChecker();
 
     @Test
-    public void instatntDateIsAfterthenReturnDate() throws Exception {
+    public void PathToStringTime() throws Exception {
 
         final File file = File.createTempFile("createdFile", ".txt");
         final Path path = file.toPath();
-
-        final Instant response = timeChecker.resolveCreationTimeWithBasicAttributes(path);
-
-        assertTrue(Instant
-                .now()
-                .isAfter(response));
+        assertTrue(FormatTime.time(path.toString()).getClass() == String.class);
 
     }
 }

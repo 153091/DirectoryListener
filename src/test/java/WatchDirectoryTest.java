@@ -20,7 +20,7 @@ public class WatchDirectoryTest {
     String path = "src/test/testdir/test.txt";
 
     @Before
-    public void setUo() throws Exception {
+    public void setUp() throws Exception {
         watchService = FileSystems.getDefault().newWatchService();
         basePathWatchKey = basePath.register(watchService, ENTRY_CREATE);
     }
@@ -50,6 +50,7 @@ public class WatchDirectoryTest {
 
     @After
     public void deleteTestFile(){
-        DeleteFile.delete(path);
+        DeleteFile delete = new DeleteFile(path);
+        delete.run();
     }
 }

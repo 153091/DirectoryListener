@@ -6,7 +6,7 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 public class FormatTime {
-    public static void time(String str) {
+    public static String time(String str) {
         // process create event
         Path p1 = Paths.get(str);
         String time = TimeChecker.resolveCreationTimeWithBasicAttributes(p1)
@@ -14,5 +14,7 @@ public class FormatTime {
                 .toLocalDateTime()
                 .format(DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss"));;
         LoggerService.LOGGER.info("Create time " + time);
+
+        return time;
     }
 }

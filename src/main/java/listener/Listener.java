@@ -44,7 +44,7 @@ public class Listener {
                             else new Thread(new CountLinesJson(str)).start();
                         }
                         else {
-                            DeleteFile.delete(str);
+                            new Thread(new DeleteFile(str)).start();
                         }
                     }
                 }

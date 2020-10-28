@@ -6,10 +6,18 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.Date;
 
-public class DeleteFile {
+public class DeleteFile implements FileHandler{
 
-    // directory denoted by the abstract pathname.
-    public static void delete(String path) {
+    private String path; // directory denoted by the abstract pathname.
+
+    public DeleteFile(String path) {
+        this.path = path;
+    }
+
+
+    @Override
+    public void run() {
+
 
         DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = new Date();
