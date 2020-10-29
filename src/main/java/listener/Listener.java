@@ -6,9 +6,13 @@ import java.io.IOException;
 import java.nio.file.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Listener {
-    public static void start() {
+    private final ExecutorService executorService = Executors.newFixedThreadPool(16);
+
+    public void start() {
         try {
             WatchService service = FileSystems.getDefault().newWatchService();
             Map<WatchKey, Path> keyMap = new HashMap<>();
@@ -39,12 +43,12 @@ public class Listener {
 
                         if (eventPath.toString().matches("^(.+)\\.(xml|json)$")) {
                             if (eventPath.toString().matches("^(.+)\\.(xml)$")) {
-                                new Thread(new CountLinesXml(str)).start();
+                                executorService.execute(new CountLinesXml(str));
                             }
-                            else new Thread(new CountLinesJson(str)).start();
+                            executorService.execute(new CountLinesJson(str));
                         }
                         else {
-                            new Thread(new DeleteFile(str)).start();
+                            executorService.execute(new DeleteFile(str));
                         }
                     }
                 }
