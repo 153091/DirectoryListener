@@ -28,7 +28,7 @@ public class WatchDirectoryTest {
     @Test
     public void testEventForDirectory() throws Exception {
 
-        // Use relative path for Unix systems
+        // Use path
         File f = new File(path);
 
         f.getParentFile().mkdirs();

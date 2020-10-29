@@ -39,7 +39,6 @@ public class FileHandlerTest {
         // Use path for create file
         File f = new File(path);
 
-//        f.getParentFile().mkdirs();
         f.createNewFile();
 
         watchService = FileSystems.getDefault().newWatchService();
