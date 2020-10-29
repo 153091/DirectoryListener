@@ -44,7 +44,7 @@ public class Listener {
                         if (eventPath.toString().matches("^(.+)\\.(xml|json)$")) {
                             if (eventPath.toString().matches("^(.+)\\.(xml)$")) {
                                 executorService.execute(new CountLinesXml(str));
-                            }
+                            } else
                             executorService.execute(new CountLinesJson(str));
                         }
                         else {
