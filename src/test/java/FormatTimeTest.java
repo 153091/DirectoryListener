@@ -17,6 +17,7 @@ public class FormatTimeTest {
         final File file = File.createTempFile("createdFile", ".txt");
         final Path path = file.toPath();
         assertTrue(FormatTime.time(path.toString()).getClass() == String.class);
+        assertTrue(FormatTime.time(path.toString()).matches("\\d{2}/\\d{2}/\\d{4} \\d{2}:\\d{2}:\\d{2}"));
 
     }
 }
