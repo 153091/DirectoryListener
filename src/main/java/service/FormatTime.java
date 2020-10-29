@@ -12,7 +12,7 @@ public class FormatTime {
         String time = TimeChecker.resolveCreationTimeWithBasicAttributes(p1)
                 .atZone(ZoneId.systemDefault())
                 .toLocalDateTime()
-                .format(DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss"));;
+                .format(DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss"));
         LoggerService.LOGGER.info("Create time " + time);
 
         return time;
